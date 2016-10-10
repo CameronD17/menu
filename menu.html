@@ -1,32 +1,48 @@
-<head>
-    <style>
-    html, body {height: 100%; padding: 0;  margin: 0; font-family: 'Open Sans',sans-serif;}
-    #menu-about {background: #004870;}
-    #menu-blog {background: #D00000;}
-    #menu-projects{ background: #008000;}
-    #menu-now{ background: #4B0082;}
-
-    .menu-block-level {float:left; text-align: center; color: #FFF; width: 100%; height: 25%; opacity: 0.75; position: relative;}
-    .menu-block-level:hover {opacity: 1.0;}
-    .menu-block-level h1 {margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)}
-    .menu-block-link a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; z-index: 10; background-color: #FFF; opacity: 0; filter: alpha(opacity=1);}
+<div id="scoped-content">
+    <style type="text/css" scoped>
+        html, body {height: 100%; padding: 0;  margin: 0; font-family: 'Open Sans',sans-serif;}
+        .wrapper{overflow:hidden;}
+        #side-menu-about{background: #004870;}
+        #side-menu-blog{background: #D00000;}
+        #side-menu-projects{background: #008000;}
+        #side-menu-now{background: #4B0082;}
+        .side-menu-block-level {float:left; text-align: center; color: #FFF; width: 100%; height: 25%; opacity: 0.75; position: relative;}
+        .side-menu-block-level:hover {opacity: 1.0;}
+        .side-menu-block-level h1 {margin: 0; position: absolute; top: 50%; left: 47.5%; transform: translate(-50%, -50%)}        
+        .side-menu-block-level p {text-align: center; font-style: italic; margin: 0; position: absolute; top: 80%; left: 47.5%; transform: translate(-50%, -50%)}
+        .side-menu-block-link a {position: absolute; width: 100%; height: 100%; top: 0; left: 0; text-decoration: none; z-index:99; background-color: #FFF; opacity: 0; filter: alpha(opacity=1);}
+        .side-menu-nav{position:fixed; top:0; left:0; width:50%; height:100%; margin:0 0 0 -49%; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in; z-index: 99;}
+        .side-menu-nav ul{width:100%; height:100%; padding:0; margin:0; list-style:none; background:#FFF; overflow:hidden;}
+        .side-menu-nav li{height: 25%; margin:0;}
+        .side-menu-nav a{color:#fff; font-size:1em; font-family:'helvetica neue', helvetica, arial, sans-serif; text-decoration:none; display:block; padding:12px 15px; font-weight:300; letter-spacing:2px; border-bottom:1px solid #333;}
+        .side-menu-label{display:block; width:2%; height:100%; position:fixed; float:left; padding-left: 20px; font-size: 2em; opacity: 0.0; z-index:100;}
+        input[type="checkbox"]{display:none;}
+        input[type="checkbox"]:checked ~ nav{margin:0;}
+        input[type="checkbox"]:checked ~ label{left:49%; width: 51%; color: #000; opacity: 0.5; background:#D3D3D3; z-index:98; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
     </style>
-</head>
-<body>
-    <div id="menu-about" class="menu-block-level menu-block-link">
-        <h1>About</h1>
-        <a href="http://camerondoyle.co.uk"></a>
+        <div class="wrapper">
+            <input type="checkbox" id="navigation" />
+            <label class="side-menu-label" for="navigation">
+                &#10006;
+            </label>
+            <nav class="side-menu-nav">
+                <ul>
+                    <li id="side-menu-about"  class="side-menu-block-level side-menu-block-link">
+                        <h1>About</h1><a href="http://camerondoyle.co.uk"></a>
+                    </li>
+                    <li id="side-menu-blog"  class="side-menu-block-level side-menu-block-link">
+                        <h1>Blog</h1><a href="http://blog.camerondoyle.co.uk"></a>
+                    </li>
+                    <li id="side-menu-projects"  class="side-menu-block-level side-menu-block-link">
+                        <h1>Projects</h1><a href=""></a>
+                        <p>Coming Soon</p>
+                    </li>
+                    <li id="side-menu-now"  class="side-menu-block-level side-menu-block-link">
+                        <h1>Now</h1><a href=""></a>
+                        <p>Coming Soon</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div id="menu-blog" class="menu-block-level menu-block-link">
-        <h1>Blog</h1>
-        <a href="http://blog.camerondoyle.co.uk"></a>
-    </div>
-    <div id="menu-projects" class="menu-block-level menu-block-link">
-        <h1>Projects</h1>
-        <a href="http://projects.camerondoyle.co.uk"></a>
-    </div>
-    <div id="menu-now" class="menu-block-level menu-block-link">
-        <h1>Now</h1>
-        <a href="http://now.camerondoyle.co.uk"></a>
-    </div>
-</body>
+</div>
