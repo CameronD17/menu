@@ -14,7 +14,8 @@
         #scoped-slide-menu .side-menu-nav{position:fixed; top:0; left:0; width:50%; height:100%; margin:0 0 0 -49%; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in; z-index: 9900;}
         #scoped-slide-menu .side-menu-nav ul{width:100%; height:100%; padding:0; margin:0; list-style:none; background:#FFF; overflow:hidden;}
         #scoped-slide-menu .side-menu-nav li{height: 25%; margin:0;}
-        #scoped-slide-menu .side-menu-label{top:47.5%; font-size:2em;display:block; width:20px; height:100%; position:fixed; float:left; padding-left: 1.5%; z-index:10000; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
+        #scoped-slide-menu .side-menu-label{font-size:2em; display:inline-block; width:20px; height:100%; position:fixed; float:left; padding-left: 1.5%; z-index:10000; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
+        #scoped-slide-menu .side-menu-label span {top: 48%; transform: translateY(50%); position: relative;}
         #scoped-slide-menu .side-menu-label:hover {font-size: 2.1em;}
         #scoped-slide-menu input[type="checkbox"]{display:none;}
         #scoped-slide-menu input[type="checkbox"]:checked ~ nav{margin:0;}
@@ -23,7 +24,7 @@
     <div class="wrapper">
         <input type="checkbox" id="navigation" />
         <label class="side-menu-label" for="navigation">
-            >
+            <span>></span>
         </label>
         <nav class="side-menu-nav">
             <ul>
