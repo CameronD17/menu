@@ -14,16 +14,18 @@
         #scoped-slide-menu .side-menu-nav{position:fixed; top:0; left:0; width:50%; height:100%; margin:0 0 0 -49%; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in; z-index: 9900;}
         #scoped-slide-menu .side-menu-nav ul{width:100%; height:100%; padding:0; margin:0; list-style:none; background:#FFF; overflow:hidden;}
         #scoped-slide-menu .side-menu-nav li{height: 25%; margin:0;}
-        #scoped-slide-menu .side-menu-label{display:block; width:2%; height:100%; position:fixed; float:left; padding-left: 20px; font-size: 2em; opacity: 0.0; z-index:10000;}
-        #scoped-slide-menu .side-menu-label:hover ~ nav{margin:0 0 0 -47%;}
+        #scoped-slide-menu .side-menu-label{display:block; width:20px; height:100%; position:fixed; float:left; padding-left: 1.5%; z-index:10000; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
+        #scoped-slide-menu .side-menu-label:hover {width:25px;}
         #scoped-slide-menu input[type="checkbox"]{display:none;}
         #scoped-slide-menu input[type="checkbox"]:checked ~ nav{margin:0;}
-        #scoped-slide-menu input[type="checkbox"]:checked ~ label{left:49%; width: 51%; color: #000; opacity: 0.5; background:#D3D3D3; z-index:9800; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
+        #scoped-slide-menu input[type="checkbox"]:checked ~ label{left:50%; z-index:9800; -webkit-transform: scaleX(-1);}
     </style>
     <div class="wrapper">
         <input type="checkbox" id="navigation" />
         <label class="side-menu-label" for="navigation">
-            &#10006;
+            <svg width="100%" height="100%" viewBox="0 0 13 15">
+                <text x="0" y="13">></text>
+            </svg>
         </label>
         <nav class="side-menu-nav">
             <ul>
@@ -34,11 +36,11 @@
                     <h1>Blog</h1><a href="http://blog.camerondoyle.co.uk"></a>
                 </li>
                 <li id="side-menu-projects"  class="side-menu-block-level side-menu-block-link">
-                    <h1>Projects</h1><a href=""></a>
+                    <h1>Projects</h1><a href="#"></a>
                     <p>Coming Soon</p>
                 </li>
                 <li id="side-menu-now"  class="side-menu-block-level side-menu-block-link">
-                    <h1>Now</h1><a href=""></a>
+                    <h1>Now</h1><a href="#"></a>
                     <p>Coming Soon</p>
                 </li>
             </ul>
