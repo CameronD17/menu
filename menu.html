@@ -16,15 +16,16 @@
         #scoped-slide-menu .side-menu-nav li{height: 25%; margin:0;}
         #scoped-slide-menu .side-menu-label{font-size:2em; display:table; vertical-align: middle; width:20px; height:100%; position:fixed; float:left; padding-left: 1.5%; z-index:10000; -moz-transition:all 250ms ease-in; -webkit-transition:all 250ms ease-in; -o-transition:all 250ms ease-in; transition:all 250ms ease-in;}
         #scoped-slide-menu .side-menu-label:hover {font-size: 2.25em;}
-        #scoped-slide-menu #chevron-for-side-menu {display:table-cell; vertical-align: middle;}
+        #scoped-slide-menu #chevron-for-side-menu {display:table-cell; vertical-align: middle; width: 20px; text-align: right;}
         #scoped-slide-menu input[type="checkbox"]{display:none;}
         #scoped-slide-menu input[type="checkbox"]:checked ~ nav{margin:0;}
-        #scoped-slide-menu input[type="checkbox"]:checked ~ label{left:50%; z-index:9800; -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
+        #scoped-slide-menu input[type="checkbox"]:checked ~ label{left:49%; z-index:9800; background: rgba(54, 54, 54, .5); width:50%;}
+        #scoped-slide-menu input[type="checkbox"]:checked ~ label > span{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg);}
     </style>
     <div class="wrapper">
         <input type="checkbox" id="navigation" />
         <label class="side-menu-label" for="navigation">
-            <span id="chevron-for-side-menu">></span>
+            <span id="chevron-for-side-menu">&#xbb;</span>
         </label>
         <nav class="side-menu-nav">
             <ul>
