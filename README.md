@@ -1,6 +1,6 @@
 # Slide-out Menu
 
-This menu was written to be used on my personal website and across the accompanying subdomains ([camerondoyle.co.uk] (http://camerondoyle.co.uk)). A demonstration is available [here at camerondoyle.co.uk/menu-sample](http://camerondoyle.co.uk/menu-sample).
+This menu was written to be used on my personal website and across the accompanying subdomains ([camerondoyle.co.uk] (http://camerondoyle.co.uk)). A demonstration is available [here at camerondoyle.co.uk/menu-sample](http://camerondoyle.co.uk/menu-sample) (using the default Jekyll seed).
 
 ## Usage
 
@@ -11,7 +11,7 @@ To add this menu to your Jekyll project, take a fork of the project and run the 
     git remote add menu https://github.com/[your-github-username]/menu
     git subtree add --squash --prefix=_includes/menu/ menu template
 
-This will include the 'template' branch in your Jekyll project. To call the menu, add the following line to any files in your _layouts folder that you want to apply them too (preferably immediately after your opening <body> tag):
+This will include the 'template' branch in your Jekyll project. To call the menu, add the following line to any files in your _layouts folder that you want to apply them too (preferably immediately after your opening body tag):
 
     {% include menu/menu.html %}
 
